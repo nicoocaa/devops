@@ -11,9 +11,11 @@ DEFAULT_PORT = 8080
 class CounterStore(ABC):
     @abstractmethod
     def increment(self) -> int:
+        pass
 
     @abstractmethod
     def get(self) -> int:
+        pass
 
 
 class InMemoryCounterStore(CounterStore):
